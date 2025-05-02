@@ -1,15 +1,14 @@
 "use client";
 
 import { RepeatIcon } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence } from "motion/react";
 import React, { useCallback, useEffect, useState } from "react";
 
-import { ChanhDaiMark } from "@/components/chanhdai-mark";
+// import { ChanhDaiMark } from "@/components/chanhdai-mark";
 import { Button } from "@/components/ui/button";
 import { SimpleTooltip } from "@/components/ui/tooltip";
 import {
   AppleHelloEnglishEffect,
-  AppleHelloVietnameseEffect,
 } from "@/registry/apple-hello-effect";
 
 const layers = [ "hello", "world"] as const;

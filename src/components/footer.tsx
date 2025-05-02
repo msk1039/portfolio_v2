@@ -1,6 +1,6 @@
-import { SOURCE_CODE_GITHUB_URL } from "@/config/site";
-import { USER } from "@/data/user";
-import { urlToName } from "@/utils/url";
+// import { SOURCE_CODE_GITHUB_URL } from "@/config/site";
+// import { USER } from "@/data/user";
+// import { urlToName } from "@/utils/url";
 
 export function Footer() {
   return (

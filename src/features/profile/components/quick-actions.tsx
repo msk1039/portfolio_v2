@@ -1,6 +1,6 @@
 "use client";
 
-import { CircleUserIcon, SendIcon } from "lucide-react";
+import { SendIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { USER } from "@/data/user";
