@@ -19,12 +19,12 @@ export function QuickActions() {
           <div className="mx-auto px-4 md:max-w-3xl">
             <div className="border-x border-grid pt-2">
               <div className="screen-line-before screen-line-after -mx-px grid grid-cols-2 gap-4">
-                <Button size="lg" asChild>
+                {/* <Button size="lg" asChild>
                   <a href="/vcard" target="_blank" rel="noopener noreferrer">
                     <CircleUserIcon />
                     <span>Save vCard</span>
                   </a>
-                </Button>
+                </Button> */}
 
                 <Button size="lg" asChild>
                   <a

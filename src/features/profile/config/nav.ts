@@ -3,10 +3,10 @@ export const NAV_LINKS = [
     title: "About",
     href: "#about",
   },
-  {
-    title: "Blog",
-    href: "/blog",
-  },
+  // {
+  //   title: "Blog",
+  //   href: "/blog",
+  // },
   {
     title: "Experience",
     href: "#experience",
@@ -19,8 +19,8 @@ export const NAV_LINKS = [
     title: "Awards",
     href: "#awards",
   },
-  {
-    title: "Certs",
-    href: "#certs",
-  },
+  // {
+  //   title: "Certs",
+  //   href: "#certs",
+  // },
 ];

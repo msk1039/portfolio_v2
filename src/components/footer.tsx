@@ -4,20 +4,20 @@ import { urlToName } from "@/utils/url";
 
 export function Footer() {
   return (
-    <footer className="screen-line-before border-x border-grid pt-4 pb-[env(safe-area-inset-bottom,0px)]">
+    <footer className="screen-line-before border-x border-grid py-2 pb-[env(safe-area-inset-bottom,0px)]">
       <p className="mb-1 text-center font-mono text-sm text-balance text-muted-foreground">
         Inspired by tailwindcss.com.
       </p>
 
-      <p className="mb-4 text-center font-mono text-sm text-balance text-muted-foreground">
+      {/* <p className="mb-4 text-center font-mono text-sm text-balance text-muted-foreground">
         Built by{" "}
         <a
           className="link decoration-wavy"
-          href="https://linkedin.com/in/ncdai"
+          href="https://www.linkedin.com/in/mayank-kadam-82a60227a/"
           target="_blank"
           rel="noopener"
         >
-          ncdai
+          maykad
         </a>
         . The source code is available on{" "}
         <a
@@ -29,9 +29,9 @@ export function Footer() {
           GitHub
         </a>
         .
-      </p>
+      </p> */}
 
-      <div className="mb-5 flex justify-center">
+      {/* <div className="mb-5 flex justify-center">
         <a
           href="https://www.dmca.com/Protection/Status.aspx?ID=85a452ca-06aa-4352-bfeb-7cb563dbd2b9&refurl=https://chanhdai.com/"
           title="DMCA.com Protection Status"
@@ -52,9 +52,9 @@ export function Footer() {
             />
           </svg>
         </a>
-      </div>
+      </div> */}
 
-      <div className="screen-line-before grid grid-cols-2 gap-1 p-4 sm:grid-cols-4">
+      {/* <div className="screen-line-before grid grid-cols-2 gap-1 p-4 sm:grid-cols-4">
         {USER.otherWebsites.map((website) => {
           return (
             <span
@@ -76,7 +76,7 @@ export function Footer() {
           //   </a>
           // );
         })}
-      </div>
+      </div> */}
 
       {/* <div
         className={cn(

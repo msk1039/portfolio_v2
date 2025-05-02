@@ -50,8 +50,8 @@ export default function Page() {
             <TeckStack />
             <Pattern />
 
-            <Blog />
-            <Pattern />
+            {/* <Blog /> */}
+            {/* <Pattern /> */}
 
             <Experiences />
             <Pattern />
@@ -62,17 +62,17 @@ export default function Page() {
             <Awards />
             <Pattern />
 
-            <Certifications />
-            <Pattern />
+            {/* <Certifications /> */}
+            {/* <Pattern /> */}
           </main>
 
           <Footer />
         </div>
       </div>
 
-      <QuickActions />
+      {/* <QuickActions /> */}
 
-      <Confetti datesWithoutYear={[USER.dateOfBirth, ...VIETNAM_HOLIDAYS]} />
+      {/* <Confetti datesWithoutYear={[USER.dateOfBirth, ...VIETNAM_HOLIDAYS]} /> */}
 
       <ScrollTop className="bottom-[calc(4rem+env(safe-area-inset-bottom,0px))] lg:bottom-[calc(5.5rem+env(safe-area-inset-bottom,0px))]" />
     </>

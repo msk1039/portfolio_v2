@@ -30,7 +30,7 @@ export function Header() {
           <div className="mx-[2px] my-[3px]">
             <ChanhDaiAvatar className="size-32 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background sm:size-40" />
           </div>
-          <svg
+          {/* <svg
             className="absolute top-0 -left-px h-8 sm:h-9"
             viewBox="0 0 30 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ export function Header() {
               points="15,4 11.47,14.85 20.71,8.15 9.29,8.15 18.53,14.85"
               fill="#FFEB00"
             />
-          </svg>
+          </svg> */}
         </div>
 
         <div className="flex flex-1 flex-col">

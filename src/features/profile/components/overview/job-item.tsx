@@ -15,6 +15,7 @@ function getJobIcon(title: string) {
   }
 
   if (/(founder|co-founder)/i.test(title)) {
+    // return LightbulbIcon;
     return LightbulbIcon;
   }
 

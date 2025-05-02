@@ -12,7 +12,7 @@ import {
   AppleHelloVietnameseEffect,
 } from "@/registry/apple-hello-effect";
 
-const layers = ["xin-chao", "hello", "chanhdai-wordmark"] as const;
+const layers = [ "hello", "world"] as const;
 
 export function Hello() {
   const [currentIndex, setCurrentIndex] = useState(2);
@@ -41,15 +41,6 @@ export function Hello() {
           key={`layer-${currentIndex}`}
           className="flex items-center justify-center text-black dark:text-white"
         >
-          {layers[currentIndex] === "xin-chao" && (
-            <AppleHelloVietnameseEffect
-              className="h-10 sm:h-16"
-              speed={0.8}
-              exit={{ opacity: 0, scale: 0.8 }}
-              onAnimationComplete={nextAnimation}
-            />
-          )}
-
           {layers[currentIndex] === "hello" && (
             <AppleHelloEnglishEffect
               className="h-10 sm:h-16"
@@ -59,7 +50,16 @@ export function Hello() {
             />
           )}
 
-          {layers[currentIndex] === "chanhdai-wordmark" && (
+          {layers[currentIndex] === "world" && (
+            <AppleHelloEnglishEffect
+              className="h-10 sm:h-16"
+              speed={0.8}
+              exit={{ opacity: 0, scale: 0.8 }}
+              onAnimationComplete={nextAnimation}
+            />
+          )}
+
+          {/* {layers[currentIndex] === "world" && (
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -68,7 +68,7 @@ export function Hello() {
             >
               <ChanhDaiMark className="h-12 sm:h-16" />
             </motion.div>
-          )}
+          )} */}
         </div>
       </AnimatePresence>
 
