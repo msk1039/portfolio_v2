@@ -46,16 +46,19 @@ export function Header() {
         <div className="flex flex-1 flex-col">
           <div className="flex grow items-end mask-r-from-60% pb-1 pl-4">
             <div className="line-clamp-1 font-mono text-xs text-zinc-300 select-none dark:text-zinc-800">
-              {"text-3xl "}
+              {/* {"text-3xl "}
               <span className="inline dark:hidden">text-zinc-950</span>
               <span className="hidden dark:inline">text-zinc-50</span>
-              {" font-medium"}
+              {" font-medium"} */}
+              <span className="text-zinc-300 text-xl dark:inline dark:text-zinc-700">
+                { USER.username }
+              </span>
             </div>
           </div>
 
           <div className="border-t border-grid">
             <h1 className="flex items-center pl-4 font-heading text-3xl font-medium">
-              {USER.displayName}
+              {USER.firstName + " " + USER.lastName}
               &nbsp;
               <SimpleTooltip
                 content={`Official website of ${USER.displayName}`}

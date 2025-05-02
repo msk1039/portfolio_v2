@@ -14,7 +14,6 @@
       "url": "https://github.com/msk1039"
     }
   ],
-  "license": "MIT",
   "scripts": {
     "dev": "next dev -p 1408 --turbopack",
     "build": "next build",

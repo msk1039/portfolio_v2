@@ -1,6 +1,6 @@
 export const USER = {
   firstName: "Mayank",
-  lastName: "kadam",
+  lastName: "Kadam",
   displayName: "maykad",
   username: "maykad",
   gender: "male",
@@ -24,15 +24,20 @@ export const USER = {
   jobTitle: "IT Undergrad",
   jobs: [
     {
+      title: "IT Undergrad at ",
+      company: "PCCOE Pune",
+      website: "#",
+    },
+    {
       title: "Design and web developer",
       company: "GDGC PCCOE",
       website: "https://www.gdgcpccoe.org/",
     },
-    {
-      title: "Founder",
-      company: "edbn.me",
-      website: "https://edbn.me",
-    },
+    // {
+    //   title: "Founder",
+    //   company: "edbn.me",
+    //   website: "https://edbn.me",
+    // },
   ],
   about: `
 I'm Mayank, a 19yo IT student, programmer, designer, and an artist who loves creating cool and fun projects. I'm always experimenting, whether it's building web apps, designing sleek interfaces, or diving into low-level systems. You'll often find me working on side projects, participating in hackathons, or just exploring something fun and challenging.
