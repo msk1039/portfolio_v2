@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import ImgAvatar from "@/../public/images/mayank-avatar-2.jpeg";
+import ImgAvatar from "@/../public/images/mayank-avatar.jpg";
 import { USER } from "@/data/user";
 
 export function ChanhDaiAvatar({
