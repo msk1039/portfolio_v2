@@ -1,5 +1,6 @@
+import { Switch } from "@/components/my-theme-switch";
 import { NavItemGitHub } from "@/components/nav-item-github";
-import { ToggleTheme } from "@/components/toggle-theme";
+// import { ToggleTheme } from "@/components/toggle-theme";
 import { SimpleTooltip } from "@/components/ui/tooltip";
 import { USER } from "@/data/user";
 import { FlipSentences } from "@/registry/flip-sentences";
@@ -18,7 +19,8 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <NavItemGitHub />
-          <ToggleTheme />
+          {/* <ToggleTheme /> */}
+            <Switch />
           <NavDropdown className="sm:hidden" />
         </div>
       </div>

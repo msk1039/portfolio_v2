@@ -4,9 +4,10 @@ import { motion, useScroll, useSpring, useTransform } from "motion/react";
 import Link from "next/link";
 
 import { ChanhDaiMark } from "@/components/chanhdai-mark";
+import { Switch } from "@/components/my-theme-switch";
 import { NavItemGitHub } from "@/components/nav-item-github";
-import { ToggleTheme } from "@/components/toggle-theme";
 
+// import { ToggleTheme } from "@/components/toggle-theme";
 import { NavDropdown } from "./nav/nav-dropdown";
 import { NavScrollspy } from "./nav/nav-scrollspy";
 
@@ -33,7 +34,8 @@ export function StickyHeader() {
 
           <div className="flex items-center gap-2">
             <NavItemGitHub />
-            <ToggleTheme />
+            {/* <ToggleTheme /> */}
+            <Switch />
             <NavDropdown className="sm:hidden" />
           </div>
         </div>
