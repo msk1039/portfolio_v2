@@ -47,6 +47,6 @@ If you're into building awesome stuff too, or just want to chat about tech, desi
   avatar: "/images/maykad-profile.webp",
   ogImage: "/images/chanhdai-og-image.png?v=250420",
   keywords:
-    " maykad.tech, maykad, mayank, Mayank kadam, mayank sachin kadam, msk1039, mayank kadam, pccoe, edbn, edbn.me, gdgcpccoe, gdg, google developer group, pccoe student, pccoe student developer club, pccoe web developer, pccoe designer, pccoe artist",
+    "maykad.tech, maykad, mayank, Mayank kadam, mayank sachin kadam, msk1039, mayank kadam, pccoe, edbn, edbn.me, gdgcpccoe, gdg, google developer group, pccoe student, pccoe student developer club, pccoe web developer, pccoe designer, pccoe artist, pccoe it undergrad, pccoe it student, pccoe it, pccoe it department, pccoe it undergrad, pccoe it student developer club, pccoe it web developer, pccoe it designer, pccoe it artist, mayank kadam profile, mayank kadam portfolio",
   dateCreated: "2023-10-20", // YYYY-MM-DD
 };

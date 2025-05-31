@@ -206,9 +206,9 @@ export const AWARDS: Award[] = [
     id: "e282cb38-72cf-4694-87fd-ba5c94f648c0",
     prize: "2nd Prize",
     title:
-      "Won 2nd prize at eparadox, a state level event organized by spectrum pccoe 2024",
+      "Won 2nd prize at a state Competitive Programming event by spectrum pccoe 2024",
     grade: "University",
     date: "2024-2",
-    description: "- Field: Compitative Programming",
+    description: "- Field: Competitive Programming",
   },
 ];

@@ -21,7 +21,7 @@ export function ProjectItem({
 }) {
   return (
     <AccordionPrimitive.Item value={project.id} asChild>
-      <div className={cn("flex items-center", className)}>
+      <div className={cn("flex items-center max-w-full", className)}>
         {project.logo ? (
           <Image
             src={project.logo}
@@ -40,7 +40,7 @@ export function ProjectItem({
           </div>
         )}
 
-        <div className="flex-1 border-l border-dashed border-grid">
+        <div className="flex-1 border-l border-dashed border-grid min-w-0"> {/* Added min-w-0 here */}
           <AccordionPrimitive.Trigger className="group/project flex w-full items-center justify-between gap-4 px-2 py-4 text-left select-none [&[data-state=open]_.lucide-chevron-down]:rotate-180">
             <div>
               <h3 className="mb-1 flex items-center gap-1 font-heading text-lg leading-snug font-medium text-balance decoration-ring underline-offset-4 group-hover/project:underline">
@@ -78,7 +78,44 @@ export function ProjectItem({
                 ))}
               </div>
             )}
+
+
           </AccordionPrimitive.Content>
+          {Array.isArray(project.screenshots) && project.screenshots.length > 0 && (
+            <div className="px-2 pb-4 overflow-hidden md:max-w-2xl ">
+              <div className="flex flex-nowrap gap-3 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-700 scrollbar-track-transparent">
+                {project.screenshots.map((screenshot, index) => (
+                  <div key={index} className="flex-shrink-0 relative w-[200px] min-h-[120px]">
+                    {screenshot.endsWith('.mp4') ? (
+                      //auto play this shit
+                      <video
+                        src={screenshot}
+                        // alt={`Screenshot ${index + 1} of ${project.title}`}
+                        className="rounded-md border object-cover"
+                        controls
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        poster={"/images/projects-ss/webgl-raytracing/1.jpg"} // Use project logo or a placeholder
+                      />
+                    ) : (
+                      <Image
+                        src={screenshot}
+                        alt={`Screenshot ${index + 1} of ${project.title}`}
+                        fill
+                        sizes="300px"
+                        className="rounded-md border object-cover"
+                        placeholder="blur"
+                        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAEDQIHXKL3fQAAAABJRU5ErkJggg=="
+                        loading="lazy"
+                      />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </AccordionPrimitive.Item>

@@ -144,6 +144,28 @@ export const PROJECTS: Project[] = [
   //     "A Messenger clone built to practice real-time communication using Socket.IO. This project showcases my self-learning journey in implementing WebSockets for instant messaging.",
   // },
   {
+    id: "personal.edbn.me",
+    title: "personal.edbn.me",
+    time: "1.2025 — 2.2025",
+    link: "https://personal.edbn.me/",
+    tags: [
+      "nextjs",
+      "typescript",
+      "postgresql",
+      "tailwindcss",
+    ],
+    description:
+      "Lets educators create stunning portfolio pages that highlight their academic journey, research, and achievements",
+      logo: "/images/edbn-favicon.ico",
+    screenshots: [
+      "/images/projects-ss/edbn/1.jpg",
+      "/images/projects-ss/edbn/2.jpg",
+      "/images/projects-ss/edbn/3.jpg",
+      "/images/projects-ss/edbn/3.jpg",
+      "/images/projects-ss/edbn/3.jpg",
+    ]
+  },
+  {
     id: "gdgcpccoe.org",
     title: "gdgcpccoe.org",
     time: "1.2025 — 2.2025",
@@ -157,6 +179,12 @@ export const PROJECTS: Project[] = [
     description:
       "The official site of club GDGC PCCOE, Pune",
       logo: "/images/gdgcpccoe-logo.webp",
+     screenshots: [
+      "/images/projects-ss/gdgcpccoe/1.jpg",
+      "/images/projects-ss/gdgcpccoe/2.jpg",
+      "/images/projects-ss/gdgcpccoe/3.jpg",
+      "/images/projects-ss/gdgcpccoe/4.jpg",
+    ]
   },
   {
     id: "specturm2035",
@@ -172,6 +200,17 @@ export const PROJECTS: Project[] = [
     description:
       "Official site for the state level event Spectrum 2025, organized by PCCOE, Pune. The event is a platform for students to showcase their technical skills and knowledge in various domains. The website provides information about the event, including registration details, schedule, and resources for participants.",
       logo: "/images/spectrumpccoe25-logo.png",
+    screenshots: [
+      "/images/projects-ss/spectrum/1.jpg",
+      "/images/projects-ss/spectrum/2.jpg",
+      "/images/projects-ss/spectrum/3.jpg",
+      "/images/projects-ss/spectrum/4.jpg",
+      "/images/projects-ss/spectrum/5.jpg",
+      "/images/projects-ss/spectrum/6.jpg",
+      "/images/projects-ss/spectrum/7.jpg",
+      "/images/projects-ss/spectrum/8.jpg",
+      "/images/projects-ss/spectrum/9.jpg",
+    ]
   },
   {
     id: "code-compiler",
@@ -185,6 +224,9 @@ export const PROJECTS: Project[] = [
     description:
       "an online web based compiler ",
       // logo: "/images/spectrumpccoe25-logo.png",
+    screenshots: [
+      "/images/projects-ss/code-compiler/1.jpg",
+    ]
   },
   {
     id: "imagely",
@@ -200,6 +242,10 @@ export const PROJECTS: Project[] = [
     description:
       "Convert and compress images directly in your browser with complete privacy, built using typescript and rust wasm ",
       // logo: "/images/spectrumpccoe25-logo.png",
+    screenshots: [
+      "/images/projects-ss/imagely/1.jpg",
+      "/images/projects-ss/imagely/2.jpg",
+    ]
   },
   {
     id: "webgl-raycasting",
@@ -214,6 +260,10 @@ export const PROJECTS: Project[] = [
     description:
       "webgl render with raycasting shadows implementation ",
       // logo: "/images/spectrumpccoe25-logo.png",
+    screenshots: [
+      "/images/projects-ss/webgl-raytracing/1.jpg",
+      "/images/projects-ss/webgl-raytracing/2.mp4",
+    ]
   },
   {
     id: "tinyTodo",
@@ -226,6 +276,9 @@ export const PROJECTS: Project[] = [
     description:
       "a TUI todo app with persistent storage using golang and Bubble Tea",
       // logo: "/images/spectrumpccoe25-logo.png",
+     screenshots: [
+      "/images/projects-ss/tinytodo/1.gif",
+    ] 
   },
   {
     id: "ARKA-website",
@@ -239,6 +292,11 @@ export const PROJECTS: Project[] = [
     description:
       "Landing page for ARKA productions, a photography and videography company. Built as a freelance projet for the company.",
       // logo: "/images/spectrumpccoe25-logo.png",
+    screenshots: [
+      "/images/projects-ss/arka-productions/1.jpg",
+      "/images/projects-ss/arka-productions/2.jpg",
+      "/images/projects-ss/arka-productions/3.jpg",
+    ]
   },
   {
     id: "bash-shell",
