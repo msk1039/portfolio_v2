@@ -144,6 +144,31 @@ export const PROJECTS: Project[] = [
   //     "A Messenger clone built to practice real-time communication using Socket.IO. This project showcases my self-learning journey in implementing WebSockets for instant messaging.",
   // },
   {
+    id: "ui.edbn.me",
+    title: "ui.edbn.me",
+    time: "1.2025 — 2.2025",
+    link: "https://ui.edbn.me/",
+    tags: [
+      "nextjs",
+      "typescript",
+      "radix-ui",
+      "shadcn/ui",
+      "framer motion",
+      "tailwindcss",
+      "supabse",
+    ],
+    description:
+      "edbn/ui — a premium registry of supercharged shaden components. Just like regular @shaden components, but with added styling, animations, and optimizations.",
+      logo: "/images/edbn-favicon.ico",
+    screenshots: [
+      "/images/projects-ss/ui-edbn/1.jpg",
+      "/images/projects-ss/ui-edbn/2.jpg",
+      "/images/projects-ss/ui-edbn/3.jpg",
+      "/images/projects-ss/ui-edbn/4.jpg",
+      "/images/projects-ss/ui-edbn/5.jpg",
+    ]
+  },
+  {
     id: "personal.edbn.me",
     title: "personal.edbn.me",
     time: "1.2025 — 2.2025",
@@ -160,8 +185,6 @@ export const PROJECTS: Project[] = [
     screenshots: [
       "/images/projects-ss/edbn/1.jpg",
       "/images/projects-ss/edbn/2.jpg",
-      "/images/projects-ss/edbn/3.jpg",
-      "/images/projects-ss/edbn/3.jpg",
       "/images/projects-ss/edbn/3.jpg",
     ]
   },
