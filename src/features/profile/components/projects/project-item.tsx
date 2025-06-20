@@ -1,16 +1,20 @@
+"use client"
 import { ArrowUpRightIcon, ChevronDownIcon, CodeXmlIcon } from "lucide-react";
 import Image from "next/image";
+// import { CldImage } from 'next-cloudinary';
 import { Accordion as AccordionPrimitive } from "radix-ui";
 import React from "react";
 
-import { Markdown } from "@/components/markdown";
+// import { Markdown } from "@/components/markdown";
 import { Tag } from "@/components/ui/tag";
 import { Prose } from "@/components/ui/typography";
+import VideoDialog from "@/components/VideoDialog"
 import { UTM_PARAMS } from "@/config/site";
 import { cn } from "@/lib/cn";
 import { addQueryParams } from "@/utils/url";
 
 import { Project } from "../../types/projects";
+
 
 export function ProjectItem({
   className,
@@ -67,7 +71,7 @@ export function ProjectItem({
           <AccordionPrimitive.Content className="space-y-4 overflow-hidden transition-all duration-300 data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
             {project?.description && (
               <Prose className="px-2">
-                <Markdown>{project?.description}</Markdown>
+                {project?.description}
               </Prose>
             )}
 
@@ -86,25 +90,62 @@ export function ProjectItem({
               <div className="flex flex-nowrap gap-3 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-700 scrollbar-track-transparent">
                 {project.screenshots.map((screenshot, index) => (
                   <div key={index} className="flex-shrink-0 relative w-[200px] min-h-[120px]">
-                    {screenshot.endsWith('.mp4') ? (
-                      //auto play this shit
-                      <video
-                        src={screenshot}
-                        // alt={`Screenshot ${index + 1} of ${project.title}`}
-                        className="rounded-md border object-cover"
-                        controls
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        poster={"/images/projects-ss/webgl-raytracing/1.jpg"} // Use project logo or a placeholder
-                      />
+                    {(screenshot.endsWith('.mp4')|| screenshot.endsWith('.mov')) ? (
+                      <div className="group border-offgray-300/40 dark:border-offgray-700/40 relative h-auto w-full overflow-hidden rounded border">
+                        {/* <video
+                          // autoPlay
+                          loop
+                          muted
+                          playsInline
+                          width={1178}
+                          height={754}
+                          className="w-full"
+                        >
+                          <source src={process.env.LANDING_VIDEO} type="video/mp4" />
+                        </video> */}
+                        <Image
+                        src={project.thumbnails?.[screenshot]?.thumbnailUrl || ''}
+                        width={400}
+                        height={400}
+                        alt="Demo Image"
+                        />
+                        <div className="absolute inset-0 bg-black/40 [mask-image:linear-gradient(to_top,_#ffffff,_transparent)]"></div>
+                        <div className="absolute inset-0 flex flex-col items-center justify-center gap-8">
+                          <VideoDialog
+                            videoUrl={screenshot}
+                            trigger={
+                              <button
+                                type="button"
+                                aria-label="Play video"
+                                className="w-16 h-16 rounded-full relative overflow-hidden flex items-center justify-center shadow-xl shadow-black/60 bg-blue-600 bg-gradient-to-t from-black to-gray-900 outline-4 outline-blue-300/20 hover:outline-blue-300/40 hover:outline-[6px] hover:scale-105 transition-all cursor-pointer"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="currentColor"
+                                  stroke="currentColor"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  className="w-6 h-6 text-white"
+                                >
+                                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                                </svg>
+                              </button>
+                            }
+                          />
+                        </div>
+                      </div>
+
+
                     ) : (
                       <Image
                         src={screenshot}
                         alt={`Screenshot ${index + 1} of ${project.title}`}
                         fill
-                        sizes="300px"
+                        sizes="400px"
                         className="rounded-md border object-cover"
                         placeholder="blur"
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAEDQIHXKL3fQAAAABJRU5ErkJggg=="

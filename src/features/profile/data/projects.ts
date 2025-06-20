@@ -158,10 +158,16 @@ export const PROJECTS: Project[] = [
     ],
     description:
       "Gitfinder scans your entire disk, finds all your Git repositories, and gives you instant access to open them in VS Code or your file manager. No more hunting through folders.",
-      logo: "/images/edbn-favicon.ico",
+    logo: "/images/edbn-favicon.ico",
     screenshots: [
-      "/images/projects-ss/gitfinder/1.jpg",
-    ]
+      // "/images/projects-ss/gitfinder/1.jpg",
+      "https://res.cloudinary.com/dvdcl3ozp/video/upload/v1750406553/projects/gitfinder/Screen_Recording_2025-06-20_at_1.23.04_PM_gidhf4.mov"
+    ],
+    thumbnails: {
+      "https://res.cloudinary.com/dvdcl3ozp/video/upload/v1750406553/projects/gitfinder/Screen_Recording_2025-06-20_at_1.23.04_PM_gidhf4.mov":{ thumbnailUrl: "https://res.cloudinary.com/dvdcl3ozp/image/upload/v1750409680/projects/gitfinder/demo-images/Image_2-min_iy4hh7.png", }
+    }
+
+
   },
   {
     id: "ui.edbn.me",
@@ -306,7 +312,10 @@ export const PROJECTS: Project[] = [
     screenshots: [
       "/images/projects-ss/webgl-raytracing/1.jpg",
       "/images/projects-ss/webgl-raytracing/2.mp4",
-    ]
+    ],
+    thumbnails: {
+      "/images/projects-ss/webgl-raytracing/2.mp4":{ thumbnailUrl: "/images/projects-ss/webgl-raytracing/1.jpg", }
+    }
   },
   {
     id: "tinyTodo",
