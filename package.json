@@ -1,24 +1,25 @@
 {
-  "name": "maykad.tech",
+  "name": "chanhdai.com",
   "version": "0.1.0",
-  "description": "maykad.tech is my portfolio website, showcasing my work and experience as a Software Developer & UI/UX Designer.",
+  "description": "chanhdai.com is my portfolio website, showcasing my work and experience as a Software Developer & UI/UX Designer.",
   "author": {
-    "name": "msk1039",
-    "email": "mayankkadam1039@gmail.com",
-    "url": "https://github.com/msk1039"
+    "name": "Nguyen Chanh Dai",
+    "email": "dai@chanhdai.com",
+    "url": "https://github.com/ncdai"
   },
   "contributors": [
     {
-      "name": "msk1039",
-      "email": "mayankkadam1039@gmail.com",
-      "url": "https://github.com/msk1039"
+      "name": "Nguyen Chanh Dai",
+      "email": "dai@chanhdai.com",
+      "url": "https://github.com/ncdai"
     }
   ],
+  "license": "MIT",
   "scripts": {
     "dev": "next dev -p 1408 --turbopack",
     "build": "next build",
     "build:turbo": "next build --turbopack",
-    "start": "next start -p 1234",
+    "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "preview": "next build --turbopack && next start -p 1408",
@@ -31,8 +32,6 @@
   },
   "dependencies": {
     "@bprogress/next": "^3.2.12",
-    "@radix-ui/react-switch": "^1.2.4",
-    "@vercel/analytics": "^1.5.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",

@@ -144,6 +144,26 @@ export const PROJECTS: Project[] = [
   //     "A Messenger clone built to practice real-time communication using Socket.IO. This project showcases my self-learning journey in implementing WebSockets for instant messaging.",
   // },
   {
+    id: "gitfinder",
+    title: "Gitfinder",
+    time: "5.2025 — 6.2025",
+    link: "https://gitfinder-plum.vercel.app/",
+    tags: [
+      "Rust",
+      "nextjs",
+      "typescript",
+      "radix-ui",
+      "shadcn/ui",
+      "tailwindcss",
+    ],
+    description:
+      "Gitfinder scans your entire disk, finds all your Git repositories, and gives you instant access to open them in VS Code or your file manager. No more hunting through folders.",
+      logo: "/images/edbn-favicon.ico",
+    screenshots: [
+      "/images/projects-ss/gitfinder/1.jpg",
+    ]
+  },
+  {
     id: "ui.edbn.me",
     title: "ui.edbn.me",
     time: "1.2025 — 2.2025",
@@ -301,7 +321,7 @@ export const PROJECTS: Project[] = [
       // logo: "/images/spectrumpccoe25-logo.png",
      screenshots: [
       "/images/projects-ss/tinytodo/1.gif",
-    ] 
+    ]
   },
   {
     id: "ARKA-website",
@@ -329,7 +349,7 @@ export const PROJECTS: Project[] = [
     tags: [
       "c++",
       "cmake",
-  
+
     ],
     description:
       "A mini version of bash shell written in c++. \nIt can execute basic bash shell commands",
